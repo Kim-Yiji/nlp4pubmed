@@ -31,7 +31,7 @@ elif mode == "3":
     if pmc_id == "":
         run_oa_api()
     else:
-        run_oa_api(searchword)
+        run_oa_api(pmc_id)
 elif mode == "4":
     run_ftp_download()
 elif mode == "5":
