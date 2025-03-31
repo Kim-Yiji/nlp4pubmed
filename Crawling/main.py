@@ -3,6 +3,7 @@ from Crawling.bioc import run_bioc
 from Crawling.oa_api import run_oa_api
 from Crawling.ftp import run_ftp_download
 from Crawling.aws import run_aws_sync
+from Crawling.oai_api import run_oai_api
 
 print("🔎 사용할 수집 방식 선택:")
 print("1. E-utilities (Entrez)")
@@ -10,8 +11,9 @@ print("2. BioC API (PMC ID 입력)")
 print("3. OA Web API")
 print("4. FTP 다운로드")
 print("5. AWS S3 동기화")
+print("6. OAI API")
 
-mode = input("번호 입력 (1~5): ").strip()
+mode = input("번호 입력 (1~6): ").strip()
 searchword = ""  # ✅ 여기에 고정 쿼리를 설정 (None이면 사용자 입력받음)s
 pmc_id = ""
     # pmc_id = "PMC10203021"
@@ -36,5 +38,10 @@ elif mode == "4":
     run_ftp_download()
 elif mode == "5":
     run_aws_sync()
+elif mode == "6":
+    if pmc_id == "":
+        run_oai_api()
+    else:
+        run_oai_api(pmc_id)
 else:
     print("❗ 잘못된 입력입니다.")
