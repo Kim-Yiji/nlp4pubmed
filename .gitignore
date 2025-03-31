@@ -1,5 +1,6 @@
 #아차차
 config.json
+.env
 
 #
 .DS_Store
