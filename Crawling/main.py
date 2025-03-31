@@ -13,6 +13,8 @@ print("5. AWS S3 동기화")
 
 mode = input("번호 입력 (1~5): ").strip()
 searchword = ""  # ✅ 여기에 고정 쿼리를 설정 (None이면 사용자 입력받음)s
+pmc_id = ""
+    # pmc_id = "PMC10203021"
 
 if mode == "1":
     if searchword == "":
@@ -26,7 +28,10 @@ elif mode == "2":
         pmc_id = searchword
     run_bioc(pmc_id)
 elif mode == "3":
-    run_oa_api()
+    if pmc_id == "":
+        run_oa_api()
+    else:
+        run_oa_api(searchword)
 elif mode == "4":
     run_ftp_download()
 elif mode == "5":
