@@ -1,6 +1,6 @@
 from Bio import Entrez
 
-def get_search_query_and_count(email: str, query: str | None = None) -> tuple[str, int]:
+def get_search_query_and_count(email: str, api_key:str, query: str | None = None) -> tuple[str, int]:
     """
     PubMed 검색어를 받아 결과 개수를 반환한다.
     query가 None이면 사용자에게 입력을 요청한다.
@@ -13,6 +13,7 @@ def get_search_query_and_count(email: str, query: str | None = None) -> tuple[st
         tuple: (검색어, 검색 결과 개수)
     """
     Entrez.email = email
+    Entrez.api_key = api_key
 
     # query가 None이면 사용자 입력 받기
     if query is None:

@@ -9,13 +9,14 @@ with open("config.json", "r") as f:
     config = json.load(f)
 
 Entrez.email = config["email"]
+Entrez.api_key = config["api_key"]
 
 # ✅ 여기서 query를 None 또는 문자열로 지정
 query = None
 # query = "diabetes AND 2022[dp]"  # <- 이걸로 고정 검색하고 싶다면 이 줄만 살리면 됨
 
 # 🔍 검색어 처리
-query, total_count = get_search_query_and_count(config["email"], query)
+query, total_count = get_search_query_and_count(config["email"], config["api_key"], query)
 print(f"\n📄 총 {total_count:,}개의 결과가 검색되었습니다.")
 
 # ✅ 다운로드 여부 확인

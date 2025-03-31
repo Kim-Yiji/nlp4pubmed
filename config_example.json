@@ -1,3 +1,4 @@
 {
-    "email": "your_real_email@example.com"
+    "email": "your_email@example.com",
+    "api_key": "your_ncbi_api_key_here"
 }
