@@ -4,11 +4,7 @@ import pandas as pd
 from Bio import Entrez, Medline
 from Crawling.entrez_config import Entrez
 
-# ✅ 여기에 고정 쿼리를 설정 (None이면 사용자 입력받음)
-FIXED_QUERY: str | None = None
-# FIXED_QUERY = "diabetes AND 2022[dp]"  # 예시
-
-def get_search_query_and_count(email: str, api_key: str) -> tuple[str, int]:
+def get_search_query_and_count(email: str, api_key: str, query:str = None) -> tuple[str, int]:
     """
     PubMed 검색어를 받아 결과 개수를 반환한다.
     FIXED_QUERY가 있으면 그걸 쓰고, 없으면 사용자 입력을 요청한다.
@@ -24,8 +20,8 @@ def get_search_query_and_count(email: str, api_key: str) -> tuple[str, int]:
     Entrez.api_key = api_key
 
     # 🔍 query 설정 방식 결정
-    if FIXED_QUERY is not None:
-        query = FIXED_QUERY
+    if query is not None:
+        query = query
         print(f"📌 고정 쿼리 사용: {query}")
     else:
         query = input("🔍 PubMed에서 검색할 키워드를 입력하세요: ").strip()
@@ -42,7 +38,7 @@ def get_search_query_and_count(email: str, api_key: str) -> tuple[str, int]:
     return query, total_count
 
 def run_eutilities(query: str | None = None):
-    query, total_count = get_search_query_and_count(Entrez.email, Entrez.api_key)
+    query, total_count = get_search_query_and_count(Entrez.email, Entrez.api_key, query)
     print(f"\n📄 총 {total_count:,}개의 결과가 검색되었습니다.")
 
     confirm = input("📥 데이터를 다운로드하시겠습니까? (y/n): ").strip().lower()
