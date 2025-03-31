@@ -10,8 +10,12 @@ with open("config.json", "r") as f:
 
 Entrez.email = config["email"]
 
-# ✅ 검색어 입력 & 검색 결과 개수 확인
-query, total_count = get_search_query_and_count(config["email"])
+# ✅ 여기서 query를 None 또는 문자열로 지정
+query = None
+# query = "diabetes AND 2022[dp]"  # <- 이걸로 고정 검색하고 싶다면 이 줄만 살리면 됨
+
+# 🔍 검색어 처리
+query, total_count = get_search_query_and_count(config["email"], query)
 print(f"\n📄 총 {total_count:,}개의 결과가 검색되었습니다.")
 
 # ✅ 다운로드 여부 확인
@@ -20,26 +24,26 @@ if confirm != "y":
     print("❌ 다운로드를 취소했습니다.")
     exit()
 
-# ✅ 가져올 논문 개수 선택
-max_count = min(10000, total_count)
-retmax = input(f"몇 개의 논문을 가져올까요? (최대 {max_count}개): ").strip() # 웬만하면 년도로 filter 해서 가져오기
-retmax = int(retmax) if retmax.isdigit() else 10000
+# ✅ 몇 개 가져올지
+max_by_site = 10000
+max_count = min(max_by_site, total_count)
+retmax = input(f"몇 개의 논문을 가져올까요? (최대 {max_count}개): ").strip()
+retmax = int(retmax) if retmax.isdigit() else 10
 retmax = min(retmax, max_count)
 
-# 🔍 PubMed ID 재검색
+# 🔍 다시 ID 검색
 search_handle = Entrez.esearch(db="pubmed", term=query, retmax=retmax)
 search_results = Entrez.read(search_handle)
 search_handle.close()
-
 id_list = search_results["IdList"]
 
-# 📄 논문 상세정보 가져오기
+# 📄 논문 가져오기
 fetch_handle = Entrez.efetch(db="pubmed", id=",".join(id_list), rettype="medline", retmode="text")
 records = Medline.parse(fetch_handle)
 records = list(records)
 fetch_handle.close()
 
-# 📊 데이터 정리
+# 📊 정리
 data = []
 for record in records:
     data.append({
