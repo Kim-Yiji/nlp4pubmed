@@ -14,9 +14,10 @@ print("5. AWS S3 동기화")
 print("6. OAI API")
 
 mode = input("번호 입력 (1~6): ").strip()
-searchword = ""  # ✅ 여기에 고정 쿼리를 설정 (None이면 사용자 입력받음)s
+# searchword = ""  # ✅ 여기에 고정 쿼리를 설정 (None이면 사용자 입력받음)
+searchword = "cancer"
 pmc_id = ""
-    # pmc_id = "PMC10203021"
+# pmc_id = "PMC10203021"
 
 if mode == "1":
     if searchword == "":
