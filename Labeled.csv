@@ -1,10 +1,10 @@
 문장,영양소,PMID,Label,,,,
-"Patiromer, an oral potassium (K(+)) binder, has been shown to reduce the risk of HK and enable optimal RAASi dosing.",Potassium,40350541,0,관련없음,0,26,Potassium
-"Selenium (p = 0.0001, OR 0.788, 95% CI 0.703-0.883) and Potassium (p = 0.045, OR 0.463, 95% CI 0.219-0.982) were significantly negatively associated with MM risk, suggesting a protective effect.",Potassium,40350422,1,증상,1,27,Calcium
-"Potassium may protect against MM, while Calcium increases NMSC risk, with Vitamin B6 providing protection against NMSC.",Potassium,40350422,1,용량,2,19,Omega-3
-"The guide outlines key dietary restrictions associated with dialysis-specifically for phosphorus, potassium, sodium, and fluid intake-and presents alternatives using familiar Filipino foods.",Potassium,40349882,0,민감정보,3,17,Lutein
-"Culturally relevant substitutions and preparation methods, such as boiling vegetables to reduce potassium levels and using low-sodium versions of popular dishes, are emphasized.",Potassium,40349882,0,개인정보,4,15,Biotin
-"Ontology entries, especially those related to actin, transport protein for sodium-potassium ion channel, and the calcium pathway.",Potassium,40349820,0,"라벨당 2-30개, due 목요일밤",,,Iron
+"Patiromer, an oral potassium (K(+)) binder, has been shown to reduce the risk of HK and enable optimal RAASi dosing.",Potassium,40350541,0,,,,
+"Selenium (p = 0.0001, OR 0.788, 95% CI 0.703-0.883) and Potassium (p = 0.045, OR 0.463, 95% CI 0.219-0.982) were significantly negatively associated with MM risk, suggesting a protective effect.",Potassium,40350422,1,,,,
+"Potassium may protect against MM, while Calcium increases NMSC risk, with Vitamin B6 providing protection against NMSC.",Potassium,40350422,1,,,,
+"The guide outlines key dietary restrictions associated with dialysis-specifically for phosphorus, potassium, sodium, and fluid intake-and presents alternatives using familiar Filipino foods.",Potassium,40349882,0,,,,
+"Culturally relevant substitutions and preparation methods, such as boiling vegetables to reduce potassium levels and using low-sodium versions of popular dishes, are emphasized.",Potassium,40349882,0,,,,
+"Ontology entries, especially those related to actin, transport protein for sodium-potassium ion channel, and the calcium pathway.",Potassium,40349820,0,,,,
 "TNF, produced by renal epithelial cells, regulates glucose, electrolyte, water and urea transport by modulating key transporters such as sodium-glucose co-transporter-2 (SGLT2), sodium-potassium-chloride cotransporter 2 (NKCC2), sodium chloride cotransporter (NCC), epithelial sodium channel (ENaC), aquaporin-2 (AQP2) and urea transporters.",Potassium,40349332,0,,,,
 "We show that subsets of Shox2 INs display persistent inward currents, M-type potassium currents, slow afterhyperpolarization and T-type calcium currents, which are enhanced with age.",Potassium,40349326,0,,,,
 "By contrast, the hyperpolarization-activated and A-type potassium currents were either found with low prevalence in subsets of neonatal, juvenile, and adult Shox2 INs or did not developmentally change.",Potassium,40349326,4,,,,
@@ -75,13 +75,13 @@ Supplementation with ω-3s (600 mg DHA/day) in the last half of gestation result
 Maternal fish oil (2.2 g DHA + 1.1 g EPA/day) supplementation from 20 weeks gestation until delivery could have potentially beneficial effects on the child's eye and hand coordination and is safe for the fetus and infant,ω-3,29350557,2,3,,,
 "On the basis of the most current information available, optimal calcium intake is estimated to be 400 mg/day (birth-6 months) to 600 mg/day (6-12 months) in infants; 800 mg/day in young children (1-5 years) and 800-1,200 mg/day for older children (6-10 years); 1,200-1,500 mg/day for adolescents and young adults (11-24 years); 1,000 mg/day for women between 25 and 50 years; 1,200-1,500 mg/day for pregnant or lactating women; and 1,000 mg/day for postmenopausal women on estrogen replacement therapy and 1,500 mg/day for postmenopausal women not on estrogen therapy.",Calcium,7599655,2,3,4,,
 "Recommended daily intake for men is 1,000 mg/day (25-65 years).",Calcium,7599655,2,4,,,
-"For all women and men over 65, daily intake is recommended to be 1,500 mg/day, although further research is needed for this age group. ",Calcium,7599655,2,4,,,
+"For all women and men over 65, daily intake is recommended to be 1,500 mg/day, although further research is needed for this age group.",Calcium,7599655,2,4,,,
 "Calcium intake, up to a total intake of 2,000 mg/day, appears to be safe in most individuals.",Calcium,7599655,2,,,,
-"Based on bone health, Recommended Dietary Allowances (RDAs; covering requirements of ≥97.5% of the population) for calcium range from 700 to 1300 mg/d for life-stage groups at least 1 yr of age. ",Calcium,21118827,2,,,,
+"Based on bone health, Recommended Dietary Allowances (RDAs; covering requirements of ≥97.5% of the population) for calcium range from 700 to 1300 mg/d for life-stage groups at least 1 yr of age.",Calcium,21118827,2,,,,
 "The World Health Organization recommends a potassium intake of at least 3,510 mg per day for optimal cardiovascular health.",Potassium,36689973,2,,,,
 The recommended daily intake of lutein is approximately 10.0 mg and that of zeaxanthin is 2 mg.,Lutein,35215476,2,,,,
 The reference value for biotin intake for infants aged 0 to < 4 months was set at 4 µg/day and for infants aged 4 to < 12 months at 6 µg/day.,Biotin,34977958,2,4,,,
-" In children and adolescents, the reference values for biotin intake ranged from 20 µg/day in children 1 to < 4 years to 40 µg/day in youths 15 to < 19 years.",Biotin,34977958,2,4,,,
+"In children and adolescents, the reference values for biotin intake ranged from 20 µg/day in children 1 to < 4 years to 40 µg/day in youths 15 to < 19 years.",Biotin,34977958,2,4,,,
 "For adults including pregnant women, 40 µg/day was derived as reference value for biotin intake.",Biotin,34977958,2,4,,,
 "For lactating women, this value was set at 45 µg/day.",Biotin,34977958,2,3,,,
 The data demonstrated that pregnant women needed about twice iron than non-pregnant women. ,Iron,32336977,3,,,,
