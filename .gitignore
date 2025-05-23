@@ -1,4 +1,6 @@
-
+bin/
+config.json
+modelling/best_biobert_model.pt
 
 #
 .DS_Store
