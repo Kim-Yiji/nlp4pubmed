@@ -2,7 +2,7 @@ bin/
 share/
 config.json
 modeling/best_biobert_model.pt
-
+.env
 #
 .DS_Store
 **/.DS_Store

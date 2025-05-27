@@ -1,0 +1,47 @@
+[
+    {
+      "text": "Selenium (p = 0.0001, OR 0.788, 95% CI 0.703-0.883) and Potassium (p = 0.045, OR 0.463, 95% CI 0.219-0.982) were significantly negatively associated with MM risk, suggesting a protective effect.",
+      "entities": {
+        "INGREDIENT": [
+          "Selenium",
+          "Potassium"
+        ],
+        "SYMPTOM": [
+          "MM risk"
+        ],
+        "DOSAGE": [],
+        "SENSITIVE_CONDITION": [],
+        "PERSONAL_INFO": []
+      }
+    },
+    {
+      "text": "The guide outlines key dietary restrictions associated with dialysis-specifically for phosphorus, potassium, sodium, and fluid intake-and presents alternatives using familiar Filipino foods.",
+      "entities": {
+        "INGREDIENT": [
+          "phosphorus",
+          "potassium",
+          "sodium"
+        ],
+        "SYMPTOM": [
+          "dialysis"
+        ],
+        "SENSITIVE_CONDITION": []
+      }
+    },
+    {
+      "text": "This panting causes respiratory hypocapnia, which increases the renal excretion of buffer molecules including sodium, potassium, and bicarbonate.",
+      "entities": {
+        "INGREDIENT": [
+          "Sodium",
+          "Potassium",
+          "Bicarbonate"
+        ],
+        "SYMPTOM": [
+          "Respiratory hypocapnia"
+        ],
+        "DOSAGE": [],
+        "SENSITIVE_CONDITION": [],
+        "PERSONAL_INFO": []
+      }
+    }
+  ]
