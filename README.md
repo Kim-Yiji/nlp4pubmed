@@ -1,6 +1,12 @@
 # nlp4pubmed ChatVTM mock up app
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
 
+## 앱 실행 명령어
+앱을 실행하려면 터미널에 다음과 같이 입력해주세요
+1. pip install streamlit
+2. streamlit run streamlit_app.py
+그럼 자동으로 브라우저 탭이 열립니다. 앱을 종료하려면 Ctrl + C를 눌러주세요. 
+
 ### 안내사항
 1. 입력은 증상 > 나이 > 성별 > 신장 > 기타 정보 순으로 이루어집니다. 챗봇의 질문에 따라 입력하시면 됩니다. 
 2. 증상에는 "피부 건조", "탈모", "근육 저림", 피로" 중에 하나를 입력해주세요. 기타 다른 값을 입력하셔도 되지만, 결과값이 "피부 건조"와 동일하게 나옵니다.
