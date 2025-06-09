@@ -3,6 +3,20 @@ share/
 config.json
 modeling/best_biobert_model.pt
 .env
+
+runongpu
+runongpu.zip
+# 기본적으로 NER 전체 무시
+modeling/Database/NER/*
+
+# 예외적으로 test 디렉토리는 포함
+!modeling/Database/NER/test/
+!modeling/Database/NER/test/**
+
+biobert_ner_model
+biobert_ner_output
+
+pmid_to_pmcid.json
 #
 .DS_Store
 **/.DS_Store
