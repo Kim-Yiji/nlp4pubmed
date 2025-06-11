@@ -3,6 +3,7 @@ share/
 config.json
 modeling/best_biobert_model.pt
 .env
+modeling/biobert_best_model.zip
 
 runongpu
 runongpu.zip
